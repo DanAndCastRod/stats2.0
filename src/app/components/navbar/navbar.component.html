@@ -1,0 +1,18 @@
+<!-- src/app/components/navbar/navbar.component.html -->
+<nav class="bg-own-light p-4 text-white flex justify-between items-center">
+    <!-- Logo y título del sitio -->
+    <div class="flex items-center">
+      <a href="/">
+        <img src="stats.Recurso 9.png" alt="Logo" class="h-8 mr-2">
+      </a>
+    </div>
+  
+    <!-- Botón para mostrar/ocultar el aside -->
+    <!-- md:hidden -->
+    <button class=" focus:outline-none" style="color: var(--color-own1)" (click)="onToggleAside()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </nav>
+  

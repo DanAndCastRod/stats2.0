@@ -1,0 +1,13 @@
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 60px; /* Ajustar según la altura de tu navbar */
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    height: 100%;
+  }
+  .nav-link {
+    color: #333;
+  }
+  

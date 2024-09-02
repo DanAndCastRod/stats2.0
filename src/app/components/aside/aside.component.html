@@ -1,0 +1,65 @@
+
+  <!-- src/app/components/aside/aside.component.html -->
+  <aside class="w-64 bg-gray-200 p-4 h-full fixed ">
+    <ul class="space-y-2">
+      <!-- Módulo 1: Estadística I -->
+      <li>
+        <button (click)="toggleSubMenu('modulo1')" class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-300">
+          Estadística I
+          <svg [ngClass]="{'rotate-180': isModulo1Open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <ul [ngClass]="{'block': isModulo1Open, 'hidden': !isModulo1Open}" class="pl-4">
+          <li>
+            <a routerLink="/statsI/estadistica-descriptiva" class="block py-2 px-3 rounded hover:bg-gray-300">
+              Estadística Descriptiva
+            </a>
+          </li>
+          <li>
+            <a routerLink="/statsI/teoria-probabilidad" class="block py-2 px-3 rounded hover:bg-gray-300">
+              Teoría de Probabilidad
+            </a>
+          </li>
+          <li>
+            <a routerLink="/statsI/funciones-probabilidad" class="block py-2 px-3 rounded hover:bg-gray-300">
+              Funciones de Probabilidad
+            </a>
+          </li>
+        </ul>
+      </li>
+  
+      <!-- Módulo 2: Estadística II -->
+      <li>
+        <button (click)="toggleSubMenu('modulo2')" class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-300">
+          Estadística II
+          <svg [ngClass]="{'rotate-180': isModulo2Open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <ul [ngClass]="{'block': isModulo2Open, 'hidden': !isModulo2Open}" class="pl-4">
+          <!-- Aquí puedes añadir los temas de Estadística II en el futuro -->
+          <li>
+            <span class="block py-2 px-3 rounded text-gray-400">Próximamente</span>
+          </li>
+        </ul>
+      </li>
+  
+      <!-- Módulo 3: Estadística III -->
+      <li>
+        <button (click)="toggleSubMenu('modulo3')" class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-300">
+          Estadística III
+          <svg [ngClass]="{'rotate-180': isModulo3Open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <ul [ngClass]="{'block': isModulo3Open, 'hidden': !isModulo3Open}" class="pl-4">
+          <!-- Aquí puedes añadir los temas de Estadística III en el futuro -->
+          <li>
+            <span class="block py-2 px-3 rounded text-gray-400">Próximamente</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+  

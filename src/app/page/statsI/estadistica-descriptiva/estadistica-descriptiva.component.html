@@ -1,0 +1,85 @@
+<!-- src/app/pages/stat/estadistica-descriptiva/estadistica-descriptiva.component.html -->
+<div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold text-blue-600 mb-4">Estadística Descriptiva</h1>
+    <p class="text-gray-700 mb-6">
+      La estadística descriptiva es una rama de la estadística que se encarga de recolectar, organizar, presentar, analizar e interpretar un conjunto de datos con el fin de describir sus características principales. A continuación, exploraremos algunos de los conceptos clave.
+    </p>
+  
+    <!-- Medidas de Tendencia Central -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-500 mb-4">Medidas de Tendencia Central</h2>
+      <p class="text-gray-600 mb-4">
+        Las medidas de tendencia central son valores que representan el centro o el promedio de un conjunto de datos. Las más comunes son:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li><strong>Media:</strong> El promedio aritmético de un conjunto de datos.</li>
+        <li><strong>Mediana:</strong> El valor que divide el conjunto de datos en dos partes iguales.</li>
+        <li><strong>Moda:</strong> El valor que ocurre con mayor frecuencia en un conjunto de datos.</li>
+      </ul>
+      <p class="text-gray-600">
+        Aquí puedes ver un ejemplo de cómo se calcula la media, la mediana y la moda de un conjunto de datos.
+      </p>
+      <!-- Placeholder para un ejemplo interactivo o gráfico -->
+      <!-- <div class="bg-gray-100 p-4 rounded mt-4">
+        Aquí puedes incluir un gráfico interactivo o una visualización usando una librería como D3.js o Chart.js
+        <p class="text-center text-gray-500">[Gráfico interactivo]</p>
+        
+      </div> -->
+
+      <app-gaussian-chart></app-gaussian-chart>
+    </section>
+
+
+ 
+  
+    <!-- Medidas de Dispersión -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-500 mb-4">Medidas de Dispersión</h2>
+      <p class="text-gray-600 mb-4">
+        Las medidas de dispersión indican qué tan dispersos o esparcidos están los datos alrededor de la media. Las medidas de dispersión más comunes son:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li><strong>Varianza:</strong> La medida del promedio de los cuadrados de las diferencias entre cada valor y la media.</li>
+        <li><strong>Desviación Estándar:</strong> La raíz cuadrada de la varianza, que proporciona una medida de dispersión en las mismas unidades que los datos originales.</li>
+        <li><strong>Rango:</strong> La diferencia entre el valor máximo y el mínimo en un conjunto de datos.</li>
+      </ul>
+      <p class="text-gray-600">
+        A continuación se muestra un ejemplo de cómo calcular la desviación estándar de un conjunto de datos.
+      </p>
+      <!-- Placeholder para un ejemplo interactivo o gráfico -->
+      <!-- <div class="bg-gray-100 p-4 rounded mt-4">
+        Aquí puedes incluir un gráfico interactivo o una visualización usando una librería como D3.js o Chart.js
+        <p class="text-center text-gray-500">[Gráfico interactivo]</p>
+      </div> -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-blue-500 mb-4">Campana de Gauss - Medidas de Dispersión</h2>
+        <app-gaussian-dispersion-chart></app-gaussian-dispersion-chart>
+      </section>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-blue-500 mb-4">Box Plot - Medidas de Dispersión</h2>
+        <app-boxplot-chart></app-boxplot-chart>
+      </section>
+    </section>
+  
+    <!-- Gráficos Estadísticos -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-500 mb-4">Gráficos Estadísticos</h2>
+      <p class="text-gray-600 mb-4">
+        Los gráficos estadísticos son representaciones visuales de datos que permiten una comprensión rápida y eficaz de las distribuciones y relaciones en los datos. Algunos de los gráficos más comunes son:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li><strong>Histograma:</strong> Un gráfico de barras que muestra la distribución de frecuencia de un conjunto de datos.</li>
+        <li><strong>Diagrama de Cajas y Bigotes (Box Plot):</strong> Representa la mediana, cuartiles y posibles valores atípicos de un conjunto de datos.</li>
+        <li><strong>Gráfico de Dispersión:</strong> Muestra la relación entre dos variables numéricas.</li>
+      </ul>
+      <p class="text-gray-600">
+        Aquí puedes ver ejemplos de diferentes tipos de gráficos estadísticos.
+      </p>
+      <!-- Placeholder para gráficos estadísticos -->
+      <div class="bg-gray-100 p-4 rounded mt-4">
+        <!-- Aquí puedes incluir gráficos utilizando una librería como D3.js o Chart.js -->
+        <p class="text-center text-gray-500">[Gráficos estadísticos]</p>
+      </div>
+    </section>
+  </div>
+  

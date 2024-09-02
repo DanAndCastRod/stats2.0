@@ -3,6 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    // "strictPropertyInitialization": false,
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -22,6 +23,10 @@
     "lib": [
       "ES2022",
       "dom"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"  // Add this line if you created 'src/types/plotly.js-dist-min.d.ts'
     ]
   },
   "angularCompilerOptions": {

@@ -1,0 +1,12 @@
+<!-- src/app/components/graphs/gaussian-dispersion-chart/gaussian-dispersion-chart.component.html -->
+<div class="example-data mb-4">
+    <h3 class="text-xl font-semibold text-blue-600 mb-2">Datos de Ejemplo</h3>
+    <ul class="list-disc ml-6">
+      <li *ngFor="let data of exampleData">
+        {{ data.label }}: {{ data.value }}
+      </li>
+    </ul>
+  </div>
+  
+  <div echarts [options]="gaussianDispersionChartOptions" class="demo-chart" style="height: 400px;"></div>
+  

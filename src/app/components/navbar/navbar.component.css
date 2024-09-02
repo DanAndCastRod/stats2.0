@@ -1,8 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 :root{
     --color-info: #0DCAF0;
@@ -22,27 +17,27 @@
 }
 
 .bg-own-light{
-    background-color: var(--color-light);
+    background-color: var('--color-light');
 }
 
 .bg-own7{
-    background-color: var(--color-own7);
+    background-color: var('--color-own7');
 }
 .bg-own6{
-    background-color: var(--color-own6);
+    background-color: var('--color-own6');
 }
 .bg-own5{
-    background-color: var(--color-own5);
+    background-color: var('--color-own5');
 }
 .bg-own4{
-    background-color: var(--color-own4);
+    background-color: var('--color-own4');
 }
 .bg-own3{
-    background-color: var(--color-own3);
+    background-color: var('--color-own3');
 }
 .bg-own2{
-    background-color: var(--color-own2);
+    background-color: var('--color-own2');
 }
 .bg-own1{
-    background-color: var(--color-own1);
+    background-color: var('--color-own1');
 }
